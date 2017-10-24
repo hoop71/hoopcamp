@@ -14,5 +14,15 @@
 .jumbotron { 
    margin-top: 5vh; 
    padding: 3vh;
-   
 }
+
+.sidebar { 
+   margin-top: 5vh; 
+}
+
+.img-more { 
+   max-height: 475px;
+}   
+
+
+
