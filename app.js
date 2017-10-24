@@ -18,8 +18,16 @@ var camgroundRoutes  = require("./routes/campgrounds"),
     commentRoutes    = require("./routes/comments"),
     authRoutes       = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/yelp_camp_v3", {useMongoClient: true});
+// assign mongoose promise library and connect to database
 mongoose.Promise = global.Promise;
+const databaseUri = process.env.DATABASEURL || "mongodb://heroku_dfvjvjb3:le2312md0nltclinkgcgf4bgn8@ds231725.mlab.com:31725/heroku_dfvjvjb3";
+mongoose.connect(databaseUri, { useMongoClient: true })
+      .then(() => console.log(`Database connected`))
+      .catch(err => console.log(`Database connection error: ${err.message}`));
+
+
+
+// mongoose.Promise = global.Promise;
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
