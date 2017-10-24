@@ -1,56 +1,65 @@
-<% include ./partials/header %>
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>YelpCamp</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+      <!--<link rel="stylesheet" href="/stylesheets/main.css">-->
+      <link rel="stylesheet" href="/stylesheets/css/now-ui-kit.css">
+      <link rel="stylesheet" href="/stylesheets/css/demo.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head> 
   
-<h1>Login</h1>
 
-<!--<form action="/login" method="POST">-->
-<!--   <input type="text" name="username" placeholder="username"></input>-->
-<!--   <input type="password" name="password" placeholder="password"></input>-->
-<!--   <input type="submit" value="login"></input>-->
-<!--</form>-->
-
-<!-- Footer -->
-
-
-
-
-<div class="wrapper">
-        <div class="page-header">
-            <div class="filter"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 offset-lg-4 col-sm-6 offset-sm-3">
-                            <div class="card card-register">
-                                <h3 class="title">Welcome</h3>
-								<div class="social-line text-center">
-                                    <a href="#pablo" class="btn btn-neutral btn-facebook btn-just-icon">
-                                        <i class="fa fa-facebook-square"></i>
-                                    </a>
-                                    <a href="#pablo" class="btn btn-neutral btn-google btn-just-icon">
-                                        <i class="fa fa-google-plus"></i>
-                                    </a>
-									<a href="#pablo" class="btn btn-neutral btn-twitter btn-just-icon">
-										<i class="fa fa-twitter"></i>
-									</a>
-                                </div>
-                                <form class="register-form">
-                                    <label>Email</label>
-                                    <input type="text" class="form-control" placeholder="Email">
-
-                                    <label>Password</label>
-                                    <input type="password" class="form-control" placeholder="Password">
-                                    <button class="btn btn-danger btn-block btn-round">Register</button>
-                                </form>
-                                <div class="forgot">
-                                    <a href="#" class="btn btn-link btn-danger">Forgot password?</a>
-                                </div>
+<div class="login-page sidebar-collapse">
+    <div class="page-header">
+        <div class="page-header-image" style="background-image:url(https://i.imgur.com/lDKGrS4.jpg)"></div>
+        <div class="container">
+            <div class="col-md-4 content-center">
+                <div class="card card-login card-plain">
+                    <form action="/login" class="form" method="POST">
+                        <div class="header header-primary header-tight text-center">
+                           
+                            
+                            <div class="logo-container">
+                                <img src="/assets/mountains.svg" alt="">
+                            </div>
+                            <h4>Welcome to </h4>
+                            <h2>HOOPCAMP</h2>
+                        </div>
+                        <div class="content">
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                                </span>
+                                <input class="form-control" type="text" name="username" placeholder="username"></input>
+                            </div>
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-unlock" aria-hidden="true"></i>
+                                </span>
+                                <input class="form-control" type="password" name="password" placeholder="password"></input>
                             </div>
                         </div>
-                    </div>
-					<div class="footer register-footer text-center">
-						<h6>&copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by Creative Tim</h6>
-					</div>
+                        <div class="footer text-center">
+                            <input class="btn btn-info btn-round btn-lg btn-block" type="submit" value="login"></input>
+                        </div>
+                        <div class="pull-left">
+                            <h6>
+                                <a href="/register" class="link">Create Account</a>
+                            </h6>
+                        </div>
+                        <div class="pull-right">
+                            <h6>
+                                <a href="/" class="link">Go Home</a>
+                            </h6>
+                        </div>
+                    </form>
                 </div>
+            </div>
         </div>
-    </div>
+     </div>
+ </div>
+      
     
 <% include ./partials/footer %>
+

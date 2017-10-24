@@ -5101,6 +5101,22 @@ Created using IcoMoon - icomoon.io
     padding-right: 0;
 }
 
+.card-register {
+    background-color: #FF8F5E;
+    border-radius: 8px;
+    color: #fff;
+    max-width: 350px;
+    margin: 120px 0 70px;
+    min-height: 400px;
+    padding: 30px;
+    z-index: 1;
+}
+
+.card-register label {
+    margin-top: 15px;
+}
+
+
 .footer {
     padding: 24px 0;
 }
@@ -5160,7 +5176,7 @@ Created using IcoMoon - icomoon.io
     margin-top: -60px;
     padding: 0 15px;
     width: 100%;
-    color: rgba(255, 255, 255, 0.5);
+    /*color: rgba(255, 255, 255, 0.1);*/
 }
 
 .landing-page .header {
@@ -5359,14 +5375,14 @@ Created using IcoMoon - icomoon.io
 .login-page .card-login .logo-container {
     width: 65px;
     margin: 0 auto;
-    margin-bottom: 55px;
+
 }
 
 .login-page .card-login .logo-container img {
     width: 100%;
 }
 
-.login-page .card-login .input-group:last-child {
+.login-page-login .input-group:last-child {
     margin-bottom: 40px;
 }
 
@@ -5542,9 +5558,19 @@ Created using IcoMoon - icomoon.io
     position: relative;
 }
 
+.header-tight h4 { 
+    letter-spacing: .3em;
+    margin: 0;
+}
+
+.header-tight h2 { 
+    letter-spacing: .3em;
+
+}
+
 .page-header .container>.content-center {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -5558,7 +5584,7 @@ Created using IcoMoon - icomoon.io
 
 .page-header .category,
 .page-header .description {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.1);
 }
 
 .page-header.page-header-small {
@@ -5579,7 +5605,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .page-header:before {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .page-header[filter-color="orange"] {
