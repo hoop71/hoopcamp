@@ -10,3 +10,9 @@
 #delete-form { 
    display: inline;
 }
+
+.jumbotron { 
+   margin-top: 5vh; 
+   padding: 3vh;
+   
+}
